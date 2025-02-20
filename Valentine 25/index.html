@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>message for you</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <div class="login-screen">
+    <div class="login-box">
+      <input type="text" class="name-input" placeholder="Enter name">
+      <button class="name-submit">Submit</button>
+    </div>
+  </div>
+  <div class="wrapper">
+    <h2 class="question">Will you be my valentine ?</h2>
+    <img class="gif" alt="gif" src="https://media.giphy.com/media/cbOun7SXza6TpmyUTZ/giphy.gif"/>
+    <div class="btn-group">
+      <button class="yes-btn"> No</button>
+      <button class="no-btn"> Yes</button>
+      <button class="new-yes-btn">I lied</button>
+      <button class="neo-btn">you ugly fr </button>
+    </div>
+    <div class="back-arrow">←</div>
+    <div class="chat-container">
+      <input type="text" class="chat-box" placeholder="Your answer...">
+      <button class="submit-btn">Submit</button>
+    </div>
+  </div>
+  <div class="game-screen">
+    <div class="timer">20</div>
+    <div class="failure-message" style="display: none;">oh you lost</div>
+    <div class="console-text"></div>
+    <div class="boss-container"></div>
+  </div>
+  <script src="script.js">  </script>
+</body>
+</html>

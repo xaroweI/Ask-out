@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gif {
+  height: 100%;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #e94d58;
+  margin: 15px 0;
+}
+
+.btn-group {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+button {
+  position: absolute;
+  width: 150px;
+  height: inherit;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px gray;
+  border: 2px solid #e94d58;
+  font-size: 1.2em;
+  transition: transform 0.5s ease;
+}
+
+button:nth-child(1) {
+  margin-left: -200px;
+  background: #e94d58;
+}
+
+button:nth-child(2) {
+  margin-right: -200px;
+  background: white;
+  color: #e94d58;
+}
+
+button.new-yes-btn {
+  display: none;
+  margin-left: -200px;
+  background: #e94d58;
+}
+
+button.neo-btn {
+  display: none;
+  margin-right: -200px;
+  background: white;
+  color: #e94d58;
+}
+
+/* Chat Box and Submit Button Styles */
+.chat-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.chat-box {
+  width: 200px;
+  padding: 10px;
+  border: 2px solid #e94d58;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+}
+
+.submit-btn {
+  width: 100px;
+  margin-left: 10px;
+  background: #e94d58;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #006666;
+}
+.chat-container {
+  display: none;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.chat-box {
+  width: 200px;
+  height: 40px;
+  border: 2px solid #e94d58;
+  border-radius: 20px;
+  padding: 0 15px;
+  font-size: 1em;
+  outline: none;
+}
+
+.submit-btn {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  margin: 0;
+  transform: none;
+  display: inline-block;
+  background: #e94d58;
+  color: white;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.back-arrow {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 2em;
+  cursor: pointer;
+  display: none;
+  color: #e94d58;
+  transition: all 0.3s ease;
+}
+
+.back-arrow:hover {
+  transform: scale(1.2);
+}
+.game-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: none;
+  overflow: hidden;
+}
+
+.console-text {
+  color: #00ff00;
+  font-family: monospace;
+  font-size: 1.5em;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 45%;
+}
+
+.boss-container {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: pre;
+  font-family: monospace;
+  color: white;
+}
+
+.fireball {
+  position: absolute;
+  font-size: 1.5em;
+  pointer-events: none;
+  transition: all 0.5s linear;
+}
+
+.explosion {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: explode 0.5s forwards;
+}
+
+@keyframes explode {
+  to {
+    transform: scale(20);
+    opacity: 0;
+  }
+}
+.game-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: none;
+  overflow: hidden;
+}
+
+.console-text {
+  color: #00ff00;
+  font-family: monospace;
+  font-size: 1.5em;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 45%;
+}
+
+.boss-container {
+  position: absolute;
+  left: 70%; 
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: pre;
+  font-family: monospace;
+  color: white;
+}
+
+.fireball {
+  position: absolute;
+  font-size: 1.5em;
+  pointer-events: none;
+  transition: all 0.5s linear;
+}
+
+.explosion {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: explode 0.5s forwards;
+}
+.timer {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: #ff0000;
+  font-size: 2em;
+  font-family: monospace;
+  display: none;
+}
+
+.failure-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  font-size: 3em;
+  text-align: center;
+}
+@keyframes explode {
+  to {
+    transform: scale(20);
+    opacity: 0;
+  }
+}
+
+.login-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.login-box {
+  text-align: center;
+}
+
+.name-input {
+  padding: 10px;
+  font-size: 1.2em;
+  border: 2px solid #008080;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+}
+
+.name-submit {
+  padding: 10px 20px;
+  background: #008080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(10px); }
+  50% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.4s linear;
+}

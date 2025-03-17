@@ -1,4 +1,4 @@
-// DOM Elements
+
 const wrapper = document.querySelector(".wrapper");
 const question = document.querySelector(".question");
 const gif = document.querySelector(".gif");
@@ -22,14 +22,13 @@ let currentQuestionType = null;
 let fireballCount = 0;
 let countdownInterval;
 
-// Constants
+// Constants just in case i reneed it
 const YES_QUESTION = "Solve \\(\\displaystyle\\int_{0}^{\\frac{\\pi}{3}} \\frac{\\sin x}{\\cos x} dx\\)";
 const NO_QUESTION = `Which mathematician's series solves \\(\\displaystyle\\int_{1}^{2} \\frac{\\cos x}{x} dx\\)?`;
 const SECRET_NAME = "her name";
 const BOSS_HIT_THRESHOLD = 23;
 const TIMER_DURATION = 20;
 
-// ASCII Art
 const catArt = `
               /| _ ╱|、  
              ( •̀ㅅ •́  )
